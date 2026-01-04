@@ -1,12 +1,7 @@
----
-name: pattern_extraction
-description: Extracts common patterns from a collection of your own articles to generate templates and style guidelines. Used by template-generator agent to analyze existing articles and create customized writing system.
----
+# Pattern Extraction from Article Collection (Script)
 
-# Pattern Extraction from Article Collection (Skill)
-
-This skill analyzes multiple articles to identify common patterns, categorize them, and extract reusable structures.
-Used by template-generator agent.
+This script analyzes multiple articles to identify common patterns, categorize them, and extract reusable structures.
+Used by generate-templates skill.
 
 ## 1. Purpose
 
@@ -64,7 +59,7 @@ Identify common code block usage:
 
 ## 3. Input Requirements
 
-This skill expects a collection of your own articles:
+This script expects a collection of your own articles:
 - Minimum 10 articles recommended
 - Articles from any platform (Qiita, Zenn, Medium, note, blog, etc.)
 - Markdown format preferred
@@ -193,17 +188,17 @@ Output analysis results in the following JSON format:
 
 ## 7. Related Skills
 
-- `article-skill-generator` - Uses this skill's output to generate article_templates and tone_guidelines
-- Generated `article_templates` - Created based on category patterns
-- Generated `tone_guidelines` - Created based on tone patterns
+- `generate-templates` - Uses this script's logic to analyze articles
+- Generated `article-templates` - Created based on category patterns
+- Generated `tone-guidelines` - Created based on tone patterns
 
 ## 8. Output Usage
 
-The JSON output from this skill is used by:
-1. `article-skill-generator` skill to generate:
-   - article_templates skill
-   - tone_guidelines skill
-2. template-generator agent to:
+The JSON output from this script is used by:
+1. `scripts/skill_generator.md` to generate:
+   - article-templates skill
+   - tone-guidelines skill
+2. generate-templates skill to:
    - Report analysis summary to user
    - Create category-specific templates
    - Generate writing guidelines

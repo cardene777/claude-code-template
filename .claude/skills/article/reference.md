@@ -1,12 +1,8 @@
----
-name: reference_analysis
-description: A framework for analyzing reference articles, documentation, and source code from a consistent perspective. Extracts structured information for use in subsequent outline design and writing phases. Used in Phase 1 (Content Analysis Phase) of the article-writer agent.
----
+# Reference Analysis Framework
 
-# Reference Analysis Framework (Skill)
-
-This skill provides a framework for analyzing reference materials (articles, documentation, code) from a consistent perspective.
-Used in Phase 1 (Content Analysis Phase) of the article-writer agent.
+A framework for analyzing reference articles, documentation, and source code from a consistent perspective.
+Extracts structured information for use in subsequent outline design and writing phases.
+Used in Phase 1 (Content Analysis Phase) of the article skill.
 
 ## 1. Purpose
 
