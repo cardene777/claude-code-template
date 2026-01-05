@@ -1,5 +1,4 @@
 ---
-name: article-writer
 description: アウトラインとwriting-styleに従って記事を執筆
 ---
 

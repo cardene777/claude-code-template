@@ -1,5 +1,4 @@
 ---
-name: pattern-extractor
 description: 既存記事を分析してパターンをJSON形式で抽出
 ---
 

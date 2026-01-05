@@ -1,5 +1,4 @@
 ---
-name: content-analyzer
 description: 参考資料を6要素抽出フレームワークで分析
 ---
 

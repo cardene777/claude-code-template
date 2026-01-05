@@ -1,5 +1,4 @@
 ---
-name: skill-writer
 description: パターンJSONからarticle-templatesとwriting-styleスキルを生成
 ---
 
