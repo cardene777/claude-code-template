@@ -65,7 +65,12 @@ $ARGUMENTS
 
 ### Phase 6: 履歴記録
 
-`@article-writer/history/{platform}/{filename}.md`を作成し、以下を記録する。
+履歴ファイルを作成し、以下を記録する。
+
+- **記事形式** `@article-writer/history/{platform}/{filename}.md`（記事単位）
+- **本形式** `@article-writer/history/{platform}/{book-name}.md`（本単位）
+
+記録内容:
 
 1. メタ情報（対象記事パス、プラットフォーム、作成日）
 2. 記事の目的・方針
@@ -135,10 +140,15 @@ $ARGUMENTS
 
 ### Phase 6: 履歴追記
 
-`@article-writer/history/{platform}/{filename}.md`に以下を追記する。
+該当する履歴ファイルに以下を追記する。
+
+- **記事形式** `@article-writer/history/{platform}/{filename}.md`（記事単位）
+- **本形式** `@article-writer/history/{platform}/{book-name}.md`（本単位、章情報も記録）
+
+追記内容:
 
 1. 日時
-2. 変更概要
+2. 変更概要（zenn-bookの場合は対象章も記録）
 3. 意思決定の背景
 4. ユーザー指示
 5. 参考情報
@@ -174,19 +184,16 @@ article-writer/
 │   ├── format_rules.md
 │   ├── wordings.md
 │   ├── intro_outro.md
-│   └── history_template.md
+│   ├── history_template.md       # qiita/zenn用
+│   └── history_template_book.md  # zenn-book用
 ├── style/                # 分析結果（/generate-templatesで更新）
 │   ├── format_rules.md
 │   ├── wordings.md
 │   └── intro_outro.md
-├── history/              # 記事ごとの履歴（自動生成）
-│   ├── qiita/
-│   ├── zenn/
-│   └── zenn-book/
+├── history/              # 履歴（自動生成）
+│   └── {platform}/       # 記事形式: {filename}.md、本形式: {book-name}.md
 └── categories/           # カテゴリ別テンプレート（/generate-templatesで更新）
-    ├── qiita/
-    ├── zenn/
-    └── zenn-book/
+    └── {platform}/
 ```
 
 ## スタイルガイド

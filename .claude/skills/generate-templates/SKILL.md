@@ -21,9 +21,7 @@ article-writer/
 │   ├── wordings.md
 │   └── intro_outro.md
 └── categories/           # カテゴリ別テンプレート（ここを更新）
-    ├── qiita/
-    ├── zenn/
-    └── zenn-book/
+    └── {platform}/
 ```
 
 ## 生成モード
